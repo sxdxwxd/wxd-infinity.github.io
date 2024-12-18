@@ -1,0 +1,319 @@
+/* 使用本地字体 */  
+@font-face {  
+    font-family: 'QinghuaFont';  
+    src: url('../fonts/QinghuaFont.ttf') format('truetype');  
+}  
+
+
+body {  
+    font-family: 'QinghuaFont', '微软雅黑', sans-serif;  
+    background: radial-gradient(circle, #104aa0, #0b0101); /* 径向渐变 */   
+}  
+
+.header {
+    background-color: #0e2d4f;
+}
+
+/* 导航栏 */  
+.navbar {  
+    box-shadow: 0 2px 5px rgba(29, 74, 210, 0.5);  
+    position: fixed; /* 固定导航栏 */  
+    width: 100%;    /* 宽度100% */  
+    z-index: 1030;  /* 确保导航在其他元素上方 */  
+}  
+
+.nav-link {  
+    font-size: 1rem;  
+    color: #007bff !important;  
+    transition: color 0.3s;  
+    
+}  
+
+.nav-link:hover {  
+    color: #0056b3 !important;  
+    text-decoration: underline; /* 添加下划线 */  
+    text-decoration-color: #0056b3; /* 设置下划线颜色 */  
+}  
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10rem 2rem 5rem;
+    background: url('../images/index/bg.png') no-repeat center center/cover;
+    margin-bottom: 20px; /* 或使用其他适合的值 */
+    
+}
+  
+.hero__content {
+    max-width: 600px;
+    color: black;
+}
+  
+.hero__content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: black; /* 强制应用颜色 */  
+}
+  
+.hero__content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #05101c !important; /* 强制应用颜色 */  
+}
+
+.about-section {  
+    background: linear-gradient(to right, #365c92, #0c1329);    
+    padding: 3rem 0; /* 上下内边距 */  
+}  
+
+.about-section h2 {  
+    font-size: 2.5rem;  
+    font-weight: bold;  
+    color: #007bff; /* 主标题颜色 */  
+}  
+
+.about-section p {  
+    font-size: 1.1rem;  
+    line-height: 1.8;  
+    color: #555; /* 文本颜色 */  
+}  
+
+.image-container {  
+    position: relative;  
+    overflow: hidden;  
+    border-radius: 8px;  
+    transition: transform 0.3s ease-in-out;  
+}  
+
+.image-container img {  
+    width: 100%;  
+    height: auto;  
+    border-radius: 8px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    transition: transform 0.3s ease-in-out;  
+}  
+
+.image-container:hover img {  
+    transform: scale(1.05); /* 鼠标悬停缩放效果 */  
+}
+
+/* 整体样式 */  
+.history-section { 
+    margin-top: 20px; 
+    background: linear-gradient(to right, #355b91, #1e3255);
+    padding: 3rem 0;  
+}  
+
+/* 卡片样式 */  
+.history-card {  
+    background: #fff;  
+    border: 1px solid #ddd;  
+    border-radius: 8px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    overflow: hidden;  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  
+}  
+
+.history-card:hover {  
+    transform: translateY(-5px);  
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  
+}  
+
+.history-card img {  
+    width: 100%;  
+    height: auto;  
+    display: block;  
+}  
+
+.history-card-body {  
+    padding: 1rem;  
+}  
+
+.history-card-body h4 {  
+    font-size: 1.5rem;  
+    margin-bottom: 0.5rem;  
+    color: #007bff;  
+}  
+
+.history-card-body p {  
+    font-size: 1rem;  
+    color: #555;  
+    line-height: 1.6;  
+}
+
+/* 工艺部分整体样式 */  
+.craft-section {  
+    background: linear-gradient(to right, #d8e2f1, #1f3458); /* 提供柔和的背景色 */  
+    padding: 3rem 0;  
+    margin-top: 20px;
+}  
+
+.craft-section h3 {  
+    font-size: 2.5rem;  
+    color: #007bff;  
+    margin-bottom: 2rem;  
+    font-weight: bold;  
+}  
+
+/* 卡片整体样式 */  
+.craft-card {  
+    background: #fff;  
+    border-radius: 8px;  
+    overflow: hidden;  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  
+}  
+
+.craft-card:hover {  
+    transform: translateY(-5px);  
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  
+}  
+
+.craft-card img {  
+    width: 100%;  
+    height: auto;  
+    display: block;  
+    border-bottom: 2px solid #007bff;  
+}  
+
+.craft-card-body {  
+    padding: 1rem;  
+}  
+
+.craft-card-body h4 {  
+    font-size: 1.5rem;  
+    color: #007bff;  
+    margin-bottom: 1rem;  
+}  
+
+.craft-card-body p {  
+    font-size: 1rem;  
+    line-height: 1.6;  
+    color: #555;  
+}  
+
+/* 整体样式 */  
+.culture-section {  
+    background: linear-gradient(to right, #d8e2f1, #1f3458); /* 柔和背景 */  
+    padding: 3rem 0;  
+    margin-top: 20px;
+}  
+
+.culture-section .container {  
+    max-width: 1100px; /* 容器宽度 */  
+}  
+
+/* 大标题样式 */  
+.culture-section h3 {  
+    font-size: 2.5rem;  
+    font-weight: bold;  
+    color: #007bff;  
+    margin-bottom: 2rem;  
+}  
+
+/* 段落样式 */  
+.culture-section h4 {  
+    font-size: 1.8rem;  
+    font-weight: bold;  
+    margin-bottom: 1rem;  
+    color: #007bff;  
+}  
+
+.culture-section p {  
+    font-size: 1.1rem;  
+    line-height: 1.8;  
+    color: #555;  
+}  
+
+.culture-content {  
+    padding: 1rem 0;  
+}  
+
+/* 图片样式 */  
+.culture-section img {  
+    width: 100%;  
+    height: auto;  
+    border-radius: 8px;  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  
+}  
+
+.culture-section img:hover {  
+    transform: scale(1.05);  
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  
+}
+
+/* 添加额外的段落样式 */  
+.text-muted {  
+    color: #17171a;  
+    font-size: 1rem;  
+    font-style: italic;  
+}
+
+/* 整体样式 */  
+.types-section {  
+    margin-top: 20px;
+    background: linear-gradient(to right, #355b91, #1e3255); /* 柔和背景色 */  
+    padding: 3rem 0;  
+}  
+
+.types-section h3 {  
+    font-size: 2.5rem;  
+    font-weight: bold;  
+    color: #007bff;  
+}  
+
+/* 卡片布局 */  
+.types-card {  
+    background-color: #fff;  
+    border: 1px solid #ddd;  
+    border-radius: 8px;  
+    overflow: hidden;  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  
+}  
+
+.types-card:hover {  
+    transform: translateY(-5px);  
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);  
+}  
+
+.types-card img {  
+    width: 100%;  
+    height: auto;  
+    display: block;  
+    border-bottom: 1px solid #ddd;  
+}  
+
+.types-card-body {  
+    padding: 1rem;  
+}  
+
+.types-card-body h4 {  
+    font-size: 1.5rem;  
+    margin-bottom: 0.8rem;  
+    color: #007bff;  
+}  
+
+.types-card-body p {  
+    font-size: 1rem;  
+    color: #555;  
+    line-height: 1.6;  
+}  
+
+/* 响应式支持 */  
+@media (max-width: 768px) {  
+    .types-card-body h4 {  
+        font-size: 1.3rem;  
+    }  
+    .types-card-body p {  
+        font-size: 0.95rem;  
+        line-height: 1.4;  
+    }  
+}
+
+.footer {
+    background-color: #275684;
+    color: #120744;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  

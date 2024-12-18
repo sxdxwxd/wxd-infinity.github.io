@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "QinghuaFont";
+  src: url("../fonts/QinghuaFont.ttf") format("truetype");
+}
+
+body {
+  font-family: "QinghuaFont", "微软雅黑", sans-serif;
+  background: radial-gradient(circle, #104aa0, #0b0101);
+  /* 径向渐变 */
+}
+
+.header {
+  background-color: #0e2d4f;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10rem 2rem 5rem;
+  background: url("../images/art/bg.png") no-repeat center center/cover;
+  margin-bottom: 20px;
+  /* 或使用其他适合的值 */
+}
+
+.hero__content {
+  max-width: 600px;
+  color: black;
+}
+
+.hero__content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: black;
+  /* 强制应用颜色 */
+}
+
+.hero__content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #05101c !important;
+  /* 强制应用颜色 */
+}
+
+/* 导航栏 */
+.navbar {
+  box-shadow: 0 2px 5px rgba(29, 74, 210, 0.5);
+  position: fixed;
+  /* 固定导航栏 */
+  width: 100%;
+  /* 宽度100% */
+  z-index: 1030;
+  /* 确保导航在其他元素上方 */
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-link {
+  font-size: 1rem;
+  color: #007bff !important;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #0056b3 !important;
+  text-decoration: underline;
+  /* 添加下划线 */
+  text-decoration-color: #0056b3;
+  /* 设置下划线颜色 */
+}
+
+.container {
+    max-width: 1100px;
+    /* 容器宽度 */
+}
+
+.artist-section {
+  border: 1px solid #6f9cca;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.artist-section h2 {
+  font-weight: bold;
+}
+
+.artist-section blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.artist-story {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #495057;
+}
+
+.artist-story img {
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.artist-story .img-yang {
+  max-height: 680px;
+}
+
+.artist-story .img-art {
+  width: 160px;
+  margin-top: 120px;
+}
+
+#miu {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: linear-gradient(to right, #c7d5de, #4367a0);
+}
+
+#yang {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: linear-gradient(to right, #c7d5de, #4367a0);
+}
+
+#qin {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: linear-gradient(to right, #c7d5de, #4367a0);
+}
+
+footer {
+  background-color: #114272;
+  color: #adb5bd;
+}

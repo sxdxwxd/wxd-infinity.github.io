@@ -1,0 +1,296 @@
+/* 使用本地字体 */
+@font-face {
+  font-family: "QinghuaFont";
+  src: url("../fonts/QinghuaFont.ttf") format("truetype");
+}
+
+body {
+  font-family: "QinghuaFont", "微软雅黑", sans-serif;
+  background: radial-gradient(circle, #104aa0, #0b0101);
+  /* 径向渐变 */
+}
+
+.header {
+  background-color: #0e2d4f;
+}
+
+/* 导航栏 */
+.navbar {
+  box-shadow: 0 2px 5px rgba(29, 74, 210, 0.5);
+  position: fixed;
+  /* 固定导航栏 */
+  width: 100%;
+  /* 宽度100% */
+  z-index: 1030;
+  /* 确保导航在其他元素上方 */
+}
+
+.nav-link {
+  font-size: 1rem;
+  color: #007bff !important;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #0056b3 !important;
+  text-decoration: underline;
+  /* 添加下划线 */
+  text-decoration-color: #0056b3;
+  /* 设置下划线颜色 */
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10rem 2rem 5rem;
+  background: url("../images/history/bg.png") no-repeat center center/cover;
+  margin-bottom: 20px;
+  /* 或使用其他适合的值 */
+}
+
+.hero__content {
+  max-width: 600px;
+  color: black;
+}
+
+.hero__content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: black;
+  /* 强制应用颜色 */
+}
+
+.hero__content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #05101c !important;
+  /* 强制应用颜色 */
+}
+
+/* History Section Styles */
+.history-section {
+  background: linear-gradient(
+    to right,
+    #d8e2f1,
+    #1f3458
+  ); /* Deep blue to enhance the text contrast */
+  padding: 3rem 0;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+/* Section Title */
+.history-section h3 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-family: "QinghuaFont", "Arial", sans-serif;
+  text-shadow: 2px 2px #004e87;
+}
+
+/* History Card Styles */
+.history-card {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.2s ease-out, box-shadow 0.3s ease;
+}
+
+.history-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.history-card img.history-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  /* Ensures proper scaling */
+  border-bottom: 5px solid #0a3d66;
+  /* Decorative border */
+}
+
+.history-card-body {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.history-card-body h4 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.history-card-body p {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.history-card-body a {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+}
+
+.history-card-body a:hover {
+  background-color: #004e87;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.dynasty-section {
+  background-color: #f8f9fa;
+  /* 背景色 */
+  padding: 3rem 1.5rem;
+  /* 上下内边距和左右内边距 */
+  margin-bottom: 40px;
+  /* 底部外边距 */
+  border-radius: 10px;
+  /* 圆角 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  /* 阴影效果 */
+}
+
+.dynasty-section h3 {
+  font-size: 2.5rem;
+  /* 增大标题字体 */
+  color: #007bff;
+  /* 标题颜色 */
+  margin-bottom: 1rem;
+  /* 标题底部外边距 */
+  text-align: center;
+  /* 标题居中 */
+}
+
+.dynasty-section p {
+  font-size: 1.2rem;
+  /* 段落字体大小 */
+  line-height: 1.6;
+  /* 行高 */
+  color: #333333;
+  /* 段落文字颜色 */
+  margin-bottom: 1.5rem;
+  /* 段落底部外边距 */
+}
+
+#tang {
+  padding: 30px;
+  border-radius: 10px;
+  font-style: italic;
+  background: linear-gradient(to right, #c7d5de, #4367a0);
+}
+
+#song {
+  padding: 30px;
+  border-radius: 10px;
+  font-style: italic;
+  background: linear-gradient(to right, #c7d5de, #4367a0);
+}
+#yuan {
+  padding: 30px;
+  border-radius: 10px;
+  font-style: italic;
+  background: linear-gradient(to right, #c7d5de, #4367a0);
+}
+
+#ming {
+  padding: 30px;
+  border-radius: 10px;
+  font-style: italic;
+  background: linear-gradient(to right, #c7d5de, #4367a0);
+}
+
+.tang-container {
+  background-color: #f0f8ff;
+  /* 浅蓝色背景 */
+  border: 1px solid #a0c4ff;
+  /* 边框颜色 */
+  border-radius: 8px;
+  /* 圆角 */
+  padding: 20px;
+  /* 内边距 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* 阴影效果 */
+}
+
+.song-container {
+  background-color: #e0f7fa;
+  /* 浅青色背景 */
+  border: 1px solid #80deea;
+  /* 边框颜色 */
+  border-radius: 8px;
+  /* 圆角 */
+  padding: 20px;
+  /* 内边距 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* 阴影效果 */
+}
+
+.yuan-container {
+  background-color: #e7f3fe;
+  /* 浅蓝色背景 */
+  border: 1px solid #a0d8ef;
+  /* 边框颜色 */
+  border-radius: 8px;
+  /* 圆角 */
+  padding: 20px;
+  /* 内边距 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* 阴影效果 */
+}
+
+.ming-container {
+  background-color: #9badef;
+  /* 浅紫色背景 */
+  border: 1px solid #3b4785;
+  /* 边框颜色 */
+  border-radius: 8px;
+  /* 圆角 */
+  padding: 20px;
+  /* 内边距 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* 阴影效果 */
+}
+
+@media (max-width: 768px) {
+  .history-card-body h4 {
+    font-size: 1.2rem;
+  }
+
+  .history-card-body p {
+    font-size: 0.9rem;
+  }
+
+  .history-card img.history-image {
+    height: 140px;
+    /* Adjust image height for smaller screens */
+  }
+  .dynasty-section {
+    padding: 2rem 1rem;
+    /* 在小屏幕上减少内边距 */
+  }
+
+  .dynasty-section h3 {
+    font-size: 2rem;
+    /* 在小屏幕上减小标题字体 */
+  }
+
+  .dynasty-section p {
+    font-size: 1rem;
+    /* 在小屏幕上减小段落字体 */
+  }
+}
+
+.footer {
+  background-color: #275684;
+  color: #120744;
+  text-align: center;
+  padding: 2rem 0;
+}
